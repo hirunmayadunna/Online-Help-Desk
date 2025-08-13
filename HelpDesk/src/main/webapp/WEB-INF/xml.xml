@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		 version="3.1">
+
+
+	<servlet>
+		<servlet-name>InsertServelet1</servlet-name>
+		<servlet-class>HelpDeskPackage.InsertServelet1</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>InsertServelet1</servlet-name>
+		<url-pattern>/InsertServelet1</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>LoginServelet</servlet-name>
+		<servlet-class>HelpDeskPackage.LoginServelet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServelet</servlet-name>
+		<url-pattern>/LoginServelet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminLoginServelet</servlet-name>
+		<servlet-class>HelpDeskPackage.AdminLoginServelet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AdminLoginServelet</servlet-name>
+		<url-pattern>/AdminLoginServelet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>forgetpassword</servlet-name>
+		<servlet-class>HelpDeskPackage.forgetpassword</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>forgetpassword</servlet-name>
+		<url-pattern>/forgetpassword</url-pattern>
+	</servlet-mapping>
+	
+	
+	     <servlet>
+     	<servlet-name>InsertServlet</servlet-name>
+     	<servlet-class>OnlineHelpDeskPackage.InsertServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>InsertServlet</servlet-name>
+     	<url-pattern>/InsertServlet</url-pattern>
+     </servlet-mapping>
+
+
+       <servlet>
+     	<servlet-name>GetAllServlet</servlet-name>
+     	<servlet-class>OnlineHelpDeskPackage.GetAllServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>GetAllServlet</servlet-name>
+     	<url-pattern>/GetAllServlet</url-pattern>
+     </servlet-mapping>
+
+     <servlet>
+    <servlet-name>UserTicketsServlet</servlet-name>
+    <servlet-class>OnlineHelpDeskPackage.UserTicketsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserTicketsServlet</servlet-name>
+    <url-pattern>/UserTicketsServlet</url-pattern>
+</servlet-mapping>
+	
+	
+	
+</web-app>
